@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+   
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body style="background-image: url('13.jpg')" >
+
+
+<div class="header" >
+  <h1 style="font-family:ALGERIAN" ,font-size:xx-large;">US BASED POLTICAL NEWS SENTIMENT ANALYSIS</h1>
+ <br>
+  
+<h6 align="left"><b>CNN NEWS</b>: CNN(Cable News Network) is an American news-based pay television channel owned by AT&T's WarnerMedia. CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel. Upon its launch, CNN was the first television channel to provide 24-hour news coverage and was the first all-news television channel in the United States</h6>
+
+ 
+<h6 align="left"><b>FOX News</b>: FOX NEWS is an American conservative pay television news channel. It is owned by the Fox News Group, which itself was owned by News Corporation from 1996–2013,
+ The channel broadcasts primarily from studios at 1211 Avenue of the Americas in New York City.</h6>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h4 style="font-family:ALGERIAN">NEWS OUTLET SENTIMENT ANALYSIS</h4>
+      
+      
+	  <div class='tableauPlaceholder' id='viz1572894950412' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ne&#47;newsarticle&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='newsarticle&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ne&#47;newsarticle&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572894950412');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <br>
+	  </br>
+	  <p>Here we have taken 2 online News websites which have contrasting views about us recent political news.
+Next, we performed Web Scraping to extract that data and stored in azure sql database to make data remotely accessible.
+We performed 2 types of sentiment analysis on each article they are Textblob Sentiment analysis and Vader Sentiment analysis. 
+Finally we performed data visulaization on vader Sentiment data as it is more accurate and the results are shown above.</p>
+<p>We can also observe CNN news has more positive news compared to Fox news.  </p>
+      
+    </div>
+   
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>TEAM MEMBERS</h2>
+     <img src="vineeth.jpg" alt="Trulli" width="90" height="90">
+	 <p><strong>VINEETH (DEVELOPER)</strong></p>
+	 <img src="vamsi.JPG" alt="Trulli" width="100" height="100">
+	  <p><strong>VAMSI(DATA ANALYST)</strong></p>
+	  <img src="revanth.jpg" alt="Trulli" width="110" height="90">
+	  <p><strong>REVANTH(PROGRAMMER)</strong></p>
+	  <img src="sakesh1.jpg" alt="Trulli" width="110" height="110">
+	  <p><strong>SAKESH(BUSINESS ANALYST)</strong></p>
+	  
+   
+    <div class="card">
+      <h3>Follow Me</h3>
+      <img src="follow.jpg" alt="Trulli" width="90" height="70">
+    </div>
+  </div>
+</div>
+
+<div class="footer"  style="background-color:white;">
+  <small>All Rights Received </small>
+</div>
+
+</body>
+</html>
